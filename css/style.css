@@ -5,16 +5,28 @@
 }
 
 .grid-container {
-
+    margin: 0 auto;
+    width: 1140px;
+    height: 580px;
+    display: grid;
+   grid-template-columns: repeat(4, 1fr);
+   grid-template-rows: repeat(3, 200px);
+   gap: 60px;
+   grid-auto-rows: 200px;
+   grid-auto-columns: 200px;
 }
 
-.grid-elem {
-    height: 50px;
-    background-color: rgba(1, 1, 96, 1);
-    color: #fff;
-    line-height: 50px;
-    text-align: center;
-    font-size: 26px;
-    border: 1px solid #000;
-    border-radius: 4px;
+.item {
+    width: 240px;
+}
+
+.item__title {
+    margin-top: 15px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    
+    color: #000000;
 }
